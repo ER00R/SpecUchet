@@ -49,61 +49,141 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="UchetBaseDataSet1.cs">
+      <DependentUpon>UchetBaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ГлавнаяЛК.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ГлавнаяЛК.Designer.cs">
+      <DependentUpon>ГлавнаяЛК.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="РаботаПодразделения.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="РаботаПодразделения.Designer.cs">
+      <DependentUpon>РаботаПодразделения.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="РаботаПрофессии.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="РаботаПрофессии.Designer.cs">
+      <DependentUpon>РаботаПрофессии.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="РаботаСИЗ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="РаботаСИЗ.Designer.cs">
+      <DependentUpon>РаботаСИЗ.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="РаботаТиповыеНормы.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="РаботаТиповыеНормы.Designer.cs">
+      <DependentUpon>РаботаТиповыеНормы.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="Form14.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="Form14.Designer.cs">
+      <DependentUpon>Form14.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="Авторизация.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="Авторизация.Designer.cs">
+      <DependentUpon>Авторизация.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Сотрудники.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Сотрудники.Designer.cs">
+      <DependentUpon>Сотрудники.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Подразделения.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Подразделения.Designer.cs">
+      <DependentUpon>Подразделения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Профессии.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Профессии.Designer.cs">
+      <DependentUpon>Профессии.cs</DependentUpon>
+    </Compile>
+    <Compile Include="СИЗ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="СИЗ.Designer.cs">
+      <DependentUpon>СИЗ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ТиповыеНормы.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ТиповыеНормы.Designer.cs">
+      <DependentUpon>ТиповыеНормы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="РаботаСЛК.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="РаботаСЛК.Designer.cs">
+      <DependentUpon>РаботаСЛК.cs</DependentUpon>
+    </Compile>
+    <Compile Include="РаботаСотрудники.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="РаботаСотрудники.Designer.cs">
+      <DependentUpon>РаботаСотрудники.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UchetBaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UchetBaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ГлавнаяЛК.resx">
+      <DependentUpon>ГлавнаяЛК.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="РаботаПодразделения.resx">
+      <DependentUpon>РаботаПодразделения.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="РаботаПрофессии.resx">
+      <DependentUpon>РаботаПрофессии.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="РаботаСИЗ.resx">
+      <DependentUpon>РаботаСИЗ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="РаботаТиповыеНормы.resx">
+      <DependentUpon>РаботаТиповыеНормы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14.resx">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Авторизация.resx">
+      <DependentUpon>Авторизация.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Сотрудники.resx">
+      <DependentUpon>Сотрудники.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Подразделения.resx">
+      <DependentUpon>Подразделения.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Профессии.resx">
+      <DependentUpon>Профессии.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="СИЗ.resx">
+      <DependentUpon>СИЗ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ТиповыеНормы.resx">
+      <DependentUpon>ТиповыеНормы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="РаботаСЛК.resx">
+      <DependentUpon>РаботаСЛК.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="РаботаСотрудники.resx">
+      <DependentUpon>РаботаСотрудники.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,6 +204,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UchetBaseDataSet1.xsc">
+      <DependentUpon>UchetBaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UchetBaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UchetBaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UchetBaseDataSet1.xss">
+      <DependentUpon>UchetBaseDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

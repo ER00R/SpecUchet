@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin.Animations;
+using MaterialSkin.Controls;
 
 namespace Uchet
 {
-    public partial class Form4 : Form
+    public partial class Авторизация : MaterialForm
     {
-        public Form4()
+        public Авторизация()
         {
             InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

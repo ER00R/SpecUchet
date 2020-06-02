@@ -1,6 +1,6 @@
 ﻿namespace Uchet
 {
-    partial class Form1
+    partial class ГлавнаяЛК
 
     {
         /// <summary>
@@ -30,7 +30,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ГлавнаяЛК));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -55,8 +55,30 @@
             this.materialDivider5 = new MaterialSkin.Controls.MaterialDivider();
             this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
             this.materialRaisedButton10 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.uchetBaseDataSet = new Uchet.UchetBaseDataSet();
+            this.личнаяКарточкаBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.личнаяКарточкаTableAdapter = new Uchet.UchetBaseDataSetTableAdapters.ЛичнаяКарточкаTableAdapter();
+            this.tableAdapterManager = new Uchet.UchetBaseDataSetTableAdapters.TableAdapterManager();
+            this.кодЛичнаяКарточкаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.фИОDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.табельныйНомерDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.структурноеПодразделениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.профессияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.датаПоступленияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.датаИзмененияПрофессииDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.полDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ростDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.размерОдеждыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.размерОбувиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.размерГоловногоУбораDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.размерПротивогазаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.размерРеспиратораDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.размерПерчатокDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.предусмВыдачаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uchetBaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.личнаяКарточкаBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -136,7 +158,7 @@
             this.materialRaisedButton1.ForeColor = System.Drawing.SystemColors.Control;
             this.materialRaisedButton1.Image = ((System.Drawing.Image)(resources.GetObject("materialRaisedButton1.Image")));
             this.materialRaisedButton1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(902, 117);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(902, 107);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
@@ -144,13 +166,14 @@
             this.materialRaisedButton1.TabIndex = 19;
             this.materialRaisedButton1.Text = "Добавить";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // materialRaisedButton2
             // 
             this.materialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton2.Depth = 0;
             this.materialRaisedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(902, 151);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(902, 141);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Primary = true;
@@ -164,7 +187,7 @@
             this.materialRaisedButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton3.Depth = 0;
             this.materialRaisedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(902, 184);
+            this.materialRaisedButton3.Location = new System.Drawing.Point(902, 174);
             this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton3.Name = "materialRaisedButton3";
             this.materialRaisedButton3.Primary = true;
@@ -178,7 +201,7 @@
             this.materialRaisedButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton4.Depth = 0;
             this.materialRaisedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialRaisedButton4.Location = new System.Drawing.Point(902, 218);
+            this.materialRaisedButton4.Location = new System.Drawing.Point(902, 208);
             this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton4.Name = "materialRaisedButton4";
             this.materialRaisedButton4.Primary = true;
@@ -210,7 +233,7 @@
             this.materialRaisedButton5.ForeColor = System.Drawing.SystemColors.Control;
             this.materialRaisedButton5.Image = ((System.Drawing.Image)(resources.GetObject("materialRaisedButton5.Image")));
             this.materialRaisedButton5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialRaisedButton5.Location = new System.Drawing.Point(346, 28);
+            this.materialRaisedButton5.Location = new System.Drawing.Point(207, 28);
             this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton5.Name = "materialRaisedButton5";
             this.materialRaisedButton5.Primary = true;
@@ -229,7 +252,7 @@
             this.materialRaisedButton7.ForeColor = System.Drawing.SystemColors.Control;
             this.materialRaisedButton7.Image = ((System.Drawing.Image)(resources.GetObject("materialRaisedButton7.Image")));
             this.materialRaisedButton7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialRaisedButton7.Location = new System.Drawing.Point(485, 28);
+            this.materialRaisedButton7.Location = new System.Drawing.Point(624, 28);
             this.materialRaisedButton7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton7.Name = "materialRaisedButton7";
             this.materialRaisedButton7.Primary = true;
@@ -248,13 +271,13 @@
             this.materialRaisedButton8.ForeColor = System.Drawing.SystemColors.Control;
             this.materialRaisedButton8.Image = ((System.Drawing.Image)(resources.GetObject("materialRaisedButton8.Image")));
             this.materialRaisedButton8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialRaisedButton8.Location = new System.Drawing.Point(624, 28);
+            this.materialRaisedButton8.Location = new System.Drawing.Point(485, 28);
             this.materialRaisedButton8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton8.Name = "materialRaisedButton8";
             this.materialRaisedButton8.Primary = true;
             this.materialRaisedButton8.Size = new System.Drawing.Size(133, 33);
             this.materialRaisedButton8.TabIndex = 27;
-            this.materialRaisedButton8.Text = "Склад";
+            this.materialRaisedButton8.Text = "Профессии";
             this.materialRaisedButton8.UseVisualStyleBackColor = true;
             this.materialRaisedButton8.Click += new System.EventHandler(this.materialRaisedButton8_Click);
             // 
@@ -286,13 +309,13 @@
             this.materialRaisedButton11.ForeColor = System.Drawing.SystemColors.Control;
             this.materialRaisedButton11.Image = ((System.Drawing.Image)(resources.GetObject("materialRaisedButton11.Image")));
             this.materialRaisedButton11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialRaisedButton11.Location = new System.Drawing.Point(207, 28);
+            this.materialRaisedButton11.Location = new System.Drawing.Point(346, 28);
             this.materialRaisedButton11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton11.Name = "materialRaisedButton11";
             this.materialRaisedButton11.Primary = true;
             this.materialRaisedButton11.Size = new System.Drawing.Size(133, 33);
             this.materialRaisedButton11.TabIndex = 36;
-            this.materialRaisedButton11.Text = "Личные карты";
+            this.materialRaisedButton11.Text = "Подразделения";
             this.materialRaisedButton11.UseVisualStyleBackColor = true;
             this.materialRaisedButton11.Click += new System.EventHandler(this.materialRaisedButton11_Click);
             // 
@@ -302,7 +325,7 @@
             this.materialLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.White;
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(940, 368);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -316,8 +339,8 @@
             this.materialLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.White;
-            this.materialLabel2.Location = new System.Drawing.Point(898, 95);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(898, 88);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(141, 19);
@@ -326,11 +349,30 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.кодЛичнаяКарточкаDataGridViewTextBoxColumn,
+            this.фИОDataGridViewTextBoxColumn,
+            this.табельныйНомерDataGridViewTextBoxColumn,
+            this.структурноеПодразделениеDataGridViewTextBoxColumn,
+            this.профессияDataGridViewTextBoxColumn,
+            this.датаПоступленияDataGridViewTextBoxColumn,
+            this.датаИзмененияПрофессииDataGridViewTextBoxColumn,
+            this.полDataGridViewTextBoxColumn,
+            this.ростDataGridViewTextBoxColumn,
+            this.размерОдеждыDataGridViewTextBoxColumn,
+            this.размерОбувиDataGridViewTextBoxColumn,
+            this.размерГоловногоУбораDataGridViewTextBoxColumn,
+            this.размерПротивогазаDataGridViewTextBoxColumn,
+            this.размерРеспиратораDataGridViewTextBoxColumn,
+            this.размерПерчатокDataGridViewTextBoxColumn,
+            this.предусмВыдачаDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.личнаяКарточкаBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(-1, 85);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(904, 492);
+            this.dataGridView1.Size = new System.Drawing.Size(900, 484);
             this.dataGridView1.TabIndex = 39;
             // 
             // materialLabel3
@@ -339,7 +381,7 @@
             this.materialLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.White;
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel3.Location = new System.Drawing.Point(432, 64);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
@@ -354,7 +396,7 @@
             this.materialDivider4.Location = new System.Drawing.Point(898, 86);
             this.materialDivider4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider4.Name = "materialDivider4";
-            this.materialDivider4.Size = new System.Drawing.Size(147, 169);
+            this.materialDivider4.Size = new System.Drawing.Size(147, 158);
             this.materialDivider4.TabIndex = 45;
             this.materialDivider4.Text = "materialDivider4";
             // 
@@ -398,6 +440,131 @@
             this.materialRaisedButton10.Text = "Настройки";
             this.materialRaisedButton10.UseVisualStyleBackColor = true;
             // 
+            // uchetBaseDataSet
+            // 
+            this.uchetBaseDataSet.DataSetName = "UchetBaseDataSet";
+            this.uchetBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // личнаяКарточкаBindingSource
+            // 
+            this.личнаяКарточкаBindingSource.DataMember = "ЛичнаяКарточка";
+            this.личнаяКарточкаBindingSource.DataSource = this.uchetBaseDataSet;
+            // 
+            // личнаяКарточкаTableAdapter
+            // 
+            this.личнаяКарточкаTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.UpdateOrder = Uchet.UchetBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.ВыдачаСИЗTableAdapter = null;
+            this.tableAdapterManager.ЛичнаяКарточкаTableAdapter = this.личнаяКарточкаTableAdapter;
+            this.tableAdapterManager.ПодразделенияTableAdapter = null;
+            this.tableAdapterManager.ПолTableAdapter = null;
+            this.tableAdapterManager.ПрофессииTableAdapter = null;
+            this.tableAdapterManager.СведенияОВыдачеСИЗTableAdapter = null;
+            this.tableAdapterManager.СведенияОтиповыхНормахTableAdapter = null;
+            this.tableAdapterManager.СИЗTableAdapter = null;
+            this.tableAdapterManager.СотрудникиTableAdapter = null;
+            this.tableAdapterManager.ТиповыеНормыTableAdapter = null;
+            // 
+            // кодЛичнаяКарточкаDataGridViewTextBoxColumn
+            // 
+            this.кодЛичнаяКарточкаDataGridViewTextBoxColumn.DataPropertyName = "КодЛичнаяКарточка";
+            this.кодЛичнаяКарточкаDataGridViewTextBoxColumn.HeaderText = "КодЛичнаяКарточка";
+            this.кодЛичнаяКарточкаDataGridViewTextBoxColumn.Name = "кодЛичнаяКарточкаDataGridViewTextBoxColumn";
+            // 
+            // фИОDataGridViewTextBoxColumn
+            // 
+            this.фИОDataGridViewTextBoxColumn.DataPropertyName = "ФИО";
+            this.фИОDataGridViewTextBoxColumn.HeaderText = "ФИО";
+            this.фИОDataGridViewTextBoxColumn.Name = "фИОDataGridViewTextBoxColumn";
+            // 
+            // табельныйНомерDataGridViewTextBoxColumn
+            // 
+            this.табельныйНомерDataGridViewTextBoxColumn.DataPropertyName = "ТабельныйНомер";
+            this.табельныйНомерDataGridViewTextBoxColumn.HeaderText = "ТабельныйНомер";
+            this.табельныйНомерDataGridViewTextBoxColumn.Name = "табельныйНомерDataGridViewTextBoxColumn";
+            // 
+            // структурноеПодразделениеDataGridViewTextBoxColumn
+            // 
+            this.структурноеПодразделениеDataGridViewTextBoxColumn.DataPropertyName = "СтруктурноеПодразделение";
+            this.структурноеПодразделениеDataGridViewTextBoxColumn.HeaderText = "СтруктурноеПодразделение";
+            this.структурноеПодразделениеDataGridViewTextBoxColumn.Name = "структурноеПодразделениеDataGridViewTextBoxColumn";
+            // 
+            // профессияDataGridViewTextBoxColumn
+            // 
+            this.профессияDataGridViewTextBoxColumn.DataPropertyName = "Профессия";
+            this.профессияDataGridViewTextBoxColumn.HeaderText = "Профессия";
+            this.профессияDataGridViewTextBoxColumn.Name = "профессияDataGridViewTextBoxColumn";
+            // 
+            // датаПоступленияDataGridViewTextBoxColumn
+            // 
+            this.датаПоступленияDataGridViewTextBoxColumn.DataPropertyName = "ДатаПоступления";
+            this.датаПоступленияDataGridViewTextBoxColumn.HeaderText = "ДатаПоступления";
+            this.датаПоступленияDataGridViewTextBoxColumn.Name = "датаПоступленияDataGridViewTextBoxColumn";
+            // 
+            // датаИзмененияПрофессииDataGridViewTextBoxColumn
+            // 
+            this.датаИзмененияПрофессииDataGridViewTextBoxColumn.DataPropertyName = "ДатаИзмененияПрофессии";
+            this.датаИзмененияПрофессииDataGridViewTextBoxColumn.HeaderText = "ДатаИзмененияПрофессии";
+            this.датаИзмененияПрофессииDataGridViewTextBoxColumn.Name = "датаИзмененияПрофессииDataGridViewTextBoxColumn";
+            // 
+            // полDataGridViewTextBoxColumn
+            // 
+            this.полDataGridViewTextBoxColumn.DataPropertyName = "Пол";
+            this.полDataGridViewTextBoxColumn.HeaderText = "Пол";
+            this.полDataGridViewTextBoxColumn.Name = "полDataGridViewTextBoxColumn";
+            // 
+            // ростDataGridViewTextBoxColumn
+            // 
+            this.ростDataGridViewTextBoxColumn.DataPropertyName = "Рост";
+            this.ростDataGridViewTextBoxColumn.HeaderText = "Рост";
+            this.ростDataGridViewTextBoxColumn.Name = "ростDataGridViewTextBoxColumn";
+            // 
+            // размерОдеждыDataGridViewTextBoxColumn
+            // 
+            this.размерОдеждыDataGridViewTextBoxColumn.DataPropertyName = "РазмерОдежды";
+            this.размерОдеждыDataGridViewTextBoxColumn.HeaderText = "РазмерОдежды";
+            this.размерОдеждыDataGridViewTextBoxColumn.Name = "размерОдеждыDataGridViewTextBoxColumn";
+            // 
+            // размерОбувиDataGridViewTextBoxColumn
+            // 
+            this.размерОбувиDataGridViewTextBoxColumn.DataPropertyName = "РазмерОбуви";
+            this.размерОбувиDataGridViewTextBoxColumn.HeaderText = "РазмерОбуви";
+            this.размерОбувиDataGridViewTextBoxColumn.Name = "размерОбувиDataGridViewTextBoxColumn";
+            // 
+            // размерГоловногоУбораDataGridViewTextBoxColumn
+            // 
+            this.размерГоловногоУбораDataGridViewTextBoxColumn.DataPropertyName = "РазмерГоловногоУбора";
+            this.размерГоловногоУбораDataGridViewTextBoxColumn.HeaderText = "РазмерГоловногоУбора";
+            this.размерГоловногоУбораDataGridViewTextBoxColumn.Name = "размерГоловногоУбораDataGridViewTextBoxColumn";
+            // 
+            // размерПротивогазаDataGridViewTextBoxColumn
+            // 
+            this.размерПротивогазаDataGridViewTextBoxColumn.DataPropertyName = "РазмерПротивогаза";
+            this.размерПротивогазаDataGridViewTextBoxColumn.HeaderText = "РазмерПротивогаза";
+            this.размерПротивогазаDataGridViewTextBoxColumn.Name = "размерПротивогазаDataGridViewTextBoxColumn";
+            // 
+            // размерРеспиратораDataGridViewTextBoxColumn
+            // 
+            this.размерРеспиратораDataGridViewTextBoxColumn.DataPropertyName = "РазмерРеспиратора";
+            this.размерРеспиратораDataGridViewTextBoxColumn.HeaderText = "РазмерРеспиратора";
+            this.размерРеспиратораDataGridViewTextBoxColumn.Name = "размерРеспиратораDataGridViewTextBoxColumn";
+            // 
+            // размерПерчатокDataGridViewTextBoxColumn
+            // 
+            this.размерПерчатокDataGridViewTextBoxColumn.DataPropertyName = "РазмерПерчаток";
+            this.размерПерчатокDataGridViewTextBoxColumn.HeaderText = "РазмерПерчаток";
+            this.размерПерчатокDataGridViewTextBoxColumn.Name = "размерПерчатокDataGridViewTextBoxColumn";
+            // 
+            // предусмВыдачаDataGridViewTextBoxColumn
+            // 
+            this.предусмВыдачаDataGridViewTextBoxColumn.DataPropertyName = "ПредусмВыдача";
+            this.предусмВыдачаDataGridViewTextBoxColumn.HeaderText = "ПредусмВыдача";
+            this.предусмВыдачаDataGridViewTextBoxColumn.Name = "предусмВыдачаDataGridViewTextBoxColumn";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,6 +599,8 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uchetBaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.личнаяКарточкаBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,6 +631,26 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider5;
         private MaterialSkin.Controls.MaterialDivider materialDivider2;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton10;
+        private UchetBaseDataSet uchetBaseDataSet;
+        private System.Windows.Forms.BindingSource личнаяКарточкаBindingSource;
+        private UchetBaseDataSetTableAdapters.ЛичнаяКарточкаTableAdapter личнаяКарточкаTableAdapter;
+        private UchetBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridViewTextBoxColumn кодЛичнаяКарточкаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn фИОDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn табельныйНомерDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn структурноеПодразделениеDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn профессияDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn датаПоступленияDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn датаИзмененияПрофессииDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn полDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ростDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn размерОдеждыDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn размерОбувиDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn размерГоловногоУбораDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn размерПротивогазаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn размерРеспиратораDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn размерПерчатокDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn предусмВыдачаDataGridViewTextBoxColumn;
     }
 }
 

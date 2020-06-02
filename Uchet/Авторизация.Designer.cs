@@ -1,6 +1,6 @@
 ﻿namespace Uchet
 {
-    partial class Form2
+    partial class Авторизация
     {
         /// <summary>
         /// Required designer variable.

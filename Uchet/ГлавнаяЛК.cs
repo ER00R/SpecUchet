@@ -13,9 +13,9 @@ using MaterialSkin.Controls;
 
 namespace Uchet
 {
-    public partial class Form1 : MaterialForm
+    public partial class ГлавнаяЛК : MaterialForm
     {
-        public Form1()
+        public ГлавнаяЛК()
         {
             InitializeComponent();
 
@@ -24,13 +24,15 @@ namespace Uchet
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "uchetBaseDataSet.ЛичнаяКарточка". При необходимости она может быть перемещена или удалена.
+            this.личнаяКарточкаTableAdapter.Fill(this.uchetBaseDataSet.ЛичнаяКарточка);
             timer1.Enabled = true;
             materialRaisedButton1.BackColor = Color.FromArgb(225, 225, 225);
             materialLabel1.ForeColor = Color.White;
             materialLabel2.ForeColor = Color.White;
             materialLabel3.ForeColor = Color.White;
             materialLabel3.BackColor = Color.FromArgb(38, 50, 56);
-            Form2 fz = new Form2();
+            Авторизация fz = new Авторизация();
             fz.ShowDialog();
 
 
@@ -59,33 +61,43 @@ namespace Uchet
 
         private void materialRaisedButton9_Click(object sender, EventArgs e)
         {
-            Form7 fz = new Form7();
+            ТиповыеНормы fz = new ТиповыеНормы();
             fz.Show();
         }
 
         private void materialRaisedButton5_Click(object sender, EventArgs e)
         {
-            materialLabel3.Text = "Сотрудники";
+            Сотрудники fz = new Сотрудники();
+            fz.Show();
         }
 
         private void materialRaisedButton11_Click(object sender, EventArgs e)
         {
-            materialLabel3.Text = "Личные карты";
+            Подразделения fz = new Подразделения();
+            fz.Show();
         }
 
         private void materialRaisedButton7_Click(object sender, EventArgs e)
         {
-            materialLabel3.Text = "Средства индивидуальной защиты";
+            СИЗ fz = new СИЗ();
+            fz.Show();
         }
 
         private void materialRaisedButton8_Click(object sender, EventArgs e)
         {
-            materialLabel3.Text = "Склад";
+            Профессии fz = new Профессии();
+            fz.Show();
         }
 
         private void materialRaisedButton10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            РаботаСЛК fz = new РаботаСЛК();
+            fz.Show();
         }
     }
 }

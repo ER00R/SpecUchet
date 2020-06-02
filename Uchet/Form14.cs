@@ -12,14 +12,14 @@ using MaterialSkin.Controls;
 
 namespace Uchet
 {
-    public partial class Form2 : MaterialForm
+    public partial class Form14 : MaterialForm
     {
-        public Form2()
+        public Form14()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form14_Load(object sender, EventArgs e)
         {
 
         }
