@@ -24,6 +24,14 @@ namespace Uchet
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "uchetBaseDataSet.Подразделения". При необходимости она может быть перемещена или удалена.
+            this.подразделенияTableAdapter.Fill(this.uchetBaseDataSet.Подразделения);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "uchetBaseDataSet.Профессии". При необходимости она может быть перемещена или удалена.
+            this.профессииTableAdapter.Fill(this.uchetBaseDataSet.Профессии);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "uchetBaseDataSet.Пол". При необходимости она может быть перемещена или удалена.
+            this.полTableAdapter.Fill(this.uchetBaseDataSet.Пол);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "uchetBaseDataSet.Сотрудники". При необходимости она может быть перемещена или удалена.
+            this.сотрудникиTableAdapter.Fill(this.uchetBaseDataSet.Сотрудники);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "uchetBaseDataSet.ЛичнаяКарточка". При необходимости она может быть перемещена или удалена.
             this.личнаяКарточкаTableAdapter.Fill(this.uchetBaseDataSet.ЛичнаяКарточка);
             timer1.Enabled = true;
@@ -96,8 +104,33 @@ namespace Uchet
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
+            data.mode = 1;
             РаботаСЛК fz = new РаботаСЛК();
             fz.Show();
+
+        }
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+            data.mode = 2;
+            РаботаСЛК fz = new РаботаСЛК();
+            fz.Show();
+
+        }
+
+        private void materialRaisedButton4_Click(object sender, EventArgs e)
+        {
+            data.mode = 3;
+            РаботаСЛК fz = new РаботаСЛК();
+            fz.Show();
+
+        }
+
+        private void materialRaisedButton12_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.личнаяКарточкаBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.uchetBaseDataSet);
         }
     }
 }

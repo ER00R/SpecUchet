@@ -253,15 +253,16 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "КодПрофессии";
             this.dataGridViewTextBoxColumn1.HeaderText = "Код";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 40;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Профессии";
             this.dataGridViewTextBoxColumn2.HeaderText = "Профессия";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 140;
+            this.dataGridViewTextBoxColumn2.Width = 190;
             // 
-            // Form5
+            // Профессии
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -278,7 +279,7 @@
             this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.materialDivider4);
             this.Controls.Add(this.materialDivider1);
-            this.Name = "Form5";
+            this.Name = "Профессии";
             this.Text = "Профессии";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.uchetBaseDataSet)).EndInit();

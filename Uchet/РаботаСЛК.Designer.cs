@@ -73,6 +73,11 @@
             this.сведенияОВыдачеСИЗBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.типовыеНормыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.типовыеНормыDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -84,11 +89,7 @@
             this.профессияComboBox = new System.Windows.Forms.ComboBox();
             this.профессииBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.профессииTableAdapter = new Uchet.UchetBaseDataSetTableAdapters.ПрофессииTableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
             кодЛичнаяКарточкаLabel = new System.Windows.Forms.Label();
             фИОLabel = new System.Windows.Forms.Label();
             табельныйНомерLabel = new System.Windows.Forms.Label();
@@ -245,7 +246,7 @@
             // предусмВыдачаLabel
             // 
             предусмВыдачаLabel.AutoSize = true;
-            предусмВыдачаLabel.Location = new System.Drawing.Point(13, 295);
+            предусмВыдачаLabel.Location = new System.Drawing.Point(13, 286);
             предусмВыдачаLabel.Name = "предусмВыдачаLabel";
             предусмВыдачаLabel.Size = new System.Drawing.Size(154, 13);
             предусмВыдачаLabel.TabIndex = 28;
@@ -278,6 +279,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.UpdateOrder = Uchet.UchetBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.АвторизационныеДанныеTableAdapter = null;
             this.tableAdapterManager.ВыдачаСИЗTableAdapter = null;
             this.tableAdapterManager.ЛичнаяКарточкаTableAdapter = this.личнаяКарточкаTableAdapter;
             this.tableAdapterManager.ПодразделенияTableAdapter = null;
@@ -442,7 +444,7 @@
             // предусмВыдачаTextBox
             // 
             this.предусмВыдачаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.личнаяКарточкаBindingSource, "ПредусмВыдача", true));
-            this.предусмВыдачаTextBox.Location = new System.Drawing.Point(173, 292);
+            this.предусмВыдачаTextBox.Location = new System.Drawing.Point(173, 283);
             this.предусмВыдачаTextBox.Name = "предусмВыдачаTextBox";
             this.предусмВыдачаTextBox.Size = new System.Drawing.Size(477, 20);
             this.предусмВыдачаTextBox.TabIndex = 29;
@@ -468,19 +470,53 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.типовыеНормыDataGridView.DataSource = this.типовыеНормыBindingSource;
-            this.типовыеНормыDataGridView.Location = new System.Drawing.Point(12, 350);
+            this.типовыеНормыDataGridView.Location = new System.Drawing.Point(12, 335);
             this.типовыеНормыDataGridView.Name = "типовыеНормыDataGridView";
-            this.типовыеНормыDataGridView.Size = new System.Drawing.Size(638, 255);
+            this.типовыеНормыDataGridView.Size = new System.Drawing.Size(638, 270);
             this.типовыеНормыDataGridView.TabIndex = 30;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "КодТиповыеНормы";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Код";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 5;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "НаименованиеСИЗ";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Наименование СИЗ";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 275;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "ПунктТипНорм";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Пункт типовых норм";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ЕдиницаИзмерения";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Единица Измерения";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "КоличествоНаГод";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Количество на год";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // materialDivider1
             // 
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(-1, 318);
+            this.materialDivider1.Location = new System.Drawing.Point(-1, 309);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(675, 303);
+            this.materialDivider1.Size = new System.Drawing.Size(675, 312);
             this.materialDivider1.TabIndex = 33;
             this.materialDivider1.Text = "materialDivider1";
             // 
@@ -519,6 +555,7 @@
             this.materialRaisedButton3.TabIndex = 35;
             this.materialRaisedButton3.Text = "Сохранить личную карточку";
             this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
             // 
             // materialDivider5
             // 
@@ -537,12 +574,12 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.materialLabel2.ForeColor = System.Drawing.Color.White;
-            this.materialLabel2.Location = new System.Drawing.Point(274, 325);
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(275, 313);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(130, 20);
+            this.materialLabel2.Size = new System.Drawing.Size(127, 19);
             this.materialLabel2.TabIndex = 48;
             this.materialLabel2.Text = "Типовые нормы";
             // 
@@ -582,39 +619,16 @@
             // 
             this.профессииTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // materialDivider2
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "КодТиповыеНормы";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Код";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            this.dataGridViewTextBoxColumn1.Width = 5;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "НаименованиеСИЗ";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Наименование СИЗ";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 275;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "ПунктТипНорм";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Пункт типовых норм";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 110;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ЕдиницаИзмерения";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Единица Измерения";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "КоличествоНаГод";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Количество на год";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.materialDivider2.BackColor = System.Drawing.Color.White;
+            this.materialDivider2.Depth = 0;
+            this.materialDivider2.Location = new System.Drawing.Point(-1, 64);
+            this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider2.Name = "materialDivider2";
+            this.materialDivider2.Size = new System.Drawing.Size(675, 303);
+            this.materialDivider2.TabIndex = 50;
+            this.materialDivider2.Text = "materialDivider2";
             // 
             // РаботаСЛК
             // 
@@ -659,6 +673,7 @@
             this.Controls.Add(this.кодЛичнаяКарточкаTextBox);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.materialDivider5);
+            this.Controls.Add(this.materialDivider2);
             this.Name = "РаботаСЛК";
             this.Text = "Работа с личной карточкой";
             this.Load += new System.EventHandler(this.Form8_Load);
@@ -721,5 +736,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private MaterialSkin.Controls.MaterialDivider materialDivider2;
     }
 }

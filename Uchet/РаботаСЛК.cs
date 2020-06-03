@@ -36,6 +36,21 @@ namespace Uchet
             // TODO: данная строка кода позволяет загрузить данные в таблицу "uchetBaseDataSet.ЛичнаяКарточка". При необходимости она может быть перемещена или удалена.
             this.личнаяКарточкаTableAdapter.Fill(this.uchetBaseDataSet.ЛичнаяКарточка);
 
+            if (data.mode == 1) личнаяКарточкаBindingSource.AddNew();
+            if (data.mode == 2)
+            {
+                int pos = личнаяКарточкаBindingSource.Find("КодЛичнаяКарточка", data.kod);
+                личнаяКарточкаBindingSource.Position = pos;
+            }
+            if (data.mode == 3)
+            {
+                int pos = личнаяКарточкаBindingSource.Find("КодЛичнаяКарточка", data.kod);
+                личнаяКарточкаBindingSource.Position = pos;
+                materialDivider2.Enabled = false;
+            }
+           // data.kod = 0;
+
+
 
         }
 
@@ -66,6 +81,14 @@ namespace Uchet
         private void materialDivider5_Click(object sender, EventArgs e)
         {
 
+
+        }
+
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.личнаяКарточкаBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.uchetBaseDataSet);
         }
     }
 }
