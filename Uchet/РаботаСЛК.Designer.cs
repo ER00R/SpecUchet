@@ -636,16 +636,39 @@
             // 
             this.профессииTableAdapter.ClearBeforeFill = true;
             // 
-            // materialDivider2
+            // dataGridViewTextBoxColumn1
             // 
-            this.materialDivider2.BackColor = System.Drawing.Color.White;
-            this.materialDivider2.Depth = 0;
-            this.materialDivider2.Location = new System.Drawing.Point(-1, 64);
-            this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialDivider2.Name = "materialDivider2";
-            this.materialDivider2.Size = new System.Drawing.Size(675, 303);
-            this.materialDivider2.TabIndex = 50;
-            this.materialDivider2.Text = "materialDivider2";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "КодТиповыеНормы";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Код";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 5;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "НаименованиеСИЗ";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Наименование СИЗ";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 275;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "ПунктТипНорм";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Пункт типовых норм";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ЕдиницаИзмерения";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Единица Измерения";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "КоличествоНаГод";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Количество на год";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // РаботаСЛК
             // 
