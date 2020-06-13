@@ -21,6 +21,33 @@ namespace Uchet
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "uchetBaseDataSet.АвторизационныеДанные". При необходимости она может быть перемещена или удалена.
+            this.авторизационныеДанныеTableAdapter.Fill(this.uchetBaseDataSet.АвторизационныеДанные);
+
+        }
+
+        private void авторизационныеДанныеBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.авторизационныеДанныеBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.uchetBaseDataSet);
+
+
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            
+            ГлавнаяЛК лК = new ГлавнаяЛК();
+            лК.Show();
+            if (materialRaisedButton1.Text != "") { }
+            else
+               if (materialRaisedButton1.Text == Convert.ToString(авторизационныеДанныеDataGridView.Rows[0].Cells[1].Value))
+            {
+                лК.Show();
+                this.Close();
+            }
+            else { MessageBox.Show("Wrong password"); };
 
         }
     }

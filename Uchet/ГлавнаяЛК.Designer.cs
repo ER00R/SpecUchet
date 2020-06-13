@@ -50,23 +50,31 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.личнаяКарточкаBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.uchetBaseDataSet = new Uchet.UchetBaseDataSet();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialDivider4 = new MaterialSkin.Controls.MaterialDivider();
             this.materialDivider5 = new MaterialSkin.Controls.MaterialDivider();
             this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
-            this.materialRaisedButton10 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.uchetBaseDataSet = new Uchet.UchetBaseDataSet();
-            this.личнаяКарточкаBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.личнаяКарточкаTableAdapter = new Uchet.UchetBaseDataSetTableAdapters.ЛичнаяКарточкаTableAdapter();
             this.tableAdapterManager = new Uchet.UchetBaseDataSetTableAdapters.TableAdapterManager();
+            this.materialRaisedButton10 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.сотрудникиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.сотрудникиTableAdapter = new Uchet.UchetBaseDataSetTableAdapters.СотрудникиTableAdapter();
+            this.полBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.полTableAdapter = new Uchet.UchetBaseDataSetTableAdapters.ПолTableAdapter();
+            this.профессииBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.профессииTableAdapter = new Uchet.UchetBaseDataSetTableAdapters.ПрофессииTableAdapter();
+            this.подразделенияBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.подразделенияTableAdapter = new Uchet.UchetBaseDataSetTableAdapters.ПодразделенияTableAdapter();
             this.кодЛичнаяКарточкаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.фИОDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.фИОDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.табельныйНомерDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.структурноеПодразделениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.профессияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.структурноеПодразделениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.профессияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.датаПоступленияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаИзмененияПрофессииDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.полDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.полDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ростDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.размерОдеждыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.размерОбувиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,10 +83,15 @@
             this.размерРеспиратораDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.размерПерчатокDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.предусмВыдачаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialRaisedButton12 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uchetBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.личнаяКарточкаBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uchetBaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.полBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.профессииBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.подразделенияBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -181,6 +194,7 @@
             this.materialRaisedButton2.TabIndex = 20;
             this.materialRaisedButton2.Text = "Изменить";
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
             // materialRaisedButton3
             // 
@@ -209,6 +223,7 @@
             this.materialRaisedButton4.TabIndex = 22;
             this.materialRaisedButton4.Text = "Просмотр";
             this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
             // 
             // materialRaisedButton6
             // 
@@ -375,6 +390,16 @@
             this.dataGridView1.Size = new System.Drawing.Size(900, 484);
             this.dataGridView1.TabIndex = 39;
             // 
+            // личнаяКарточкаBindingSource
+            // 
+            this.личнаяКарточкаBindingSource.DataMember = "ЛичнаяКарточка";
+            this.личнаяКарточкаBindingSource.DataSource = this.uchetBaseDataSet;
+            // 
+            // uchetBaseDataSet
+            // 
+            this.uchetBaseDataSet.DataSetName = "UchetBaseDataSet";
+            this.uchetBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // materialLabel3
             // 
             this.materialLabel3.AutoSize = true;
@@ -422,6 +447,26 @@
             this.materialDivider2.TabIndex = 42;
             this.materialDivider2.Text = "materialDivider2";
             // 
+            // личнаяКарточкаTableAdapter
+            // 
+            this.личнаяКарточкаTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.UpdateOrder = Uchet.UchetBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.АвторизационныеДанныеTableAdapter = null;
+            this.tableAdapterManager.ВыдачаСИЗTableAdapter = null;
+            this.tableAdapterManager.ЛичнаяКарточкаTableAdapter = this.личнаяКарточкаTableAdapter;
+            this.tableAdapterManager.ПодразделенияTableAdapter = null;
+            this.tableAdapterManager.ПолTableAdapter = null;
+            this.tableAdapterManager.ПрофессииTableAdapter = null;
+            this.tableAdapterManager.СведенияОВыдачеСИЗTableAdapter = null;
+            this.tableAdapterManager.СведенияОтиповыхНормахTableAdapter = null;
+            this.tableAdapterManager.СИЗTableAdapter = null;
+            this.tableAdapterManager.СотрудникиTableAdapter = null;
+            this.tableAdapterManager.ТиповыеНормыTableAdapter = null;
+            // 
             // materialRaisedButton10
             // 
             this.materialRaisedButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -440,64 +485,91 @@
             this.materialRaisedButton10.Text = "Настройки";
             this.materialRaisedButton10.UseVisualStyleBackColor = true;
             // 
-            // uchetBaseDataSet
+            // сотрудникиBindingSource
             // 
-            this.uchetBaseDataSet.DataSetName = "UchetBaseDataSet";
-            this.uchetBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.сотрудникиBindingSource.DataMember = "Сотрудники";
+            this.сотрудникиBindingSource.DataSource = this.uchetBaseDataSet;
             // 
-            // личнаяКарточкаBindingSource
+            // сотрудникиTableAdapter
             // 
-            this.личнаяКарточкаBindingSource.DataMember = "ЛичнаяКарточка";
-            this.личнаяКарточкаBindingSource.DataSource = this.uchetBaseDataSet;
+            this.сотрудникиTableAdapter.ClearBeforeFill = true;
             // 
-            // личнаяКарточкаTableAdapter
+            // полBindingSource
             // 
-            this.личнаяКарточкаTableAdapter.ClearBeforeFill = true;
+            this.полBindingSource.DataMember = "Пол";
+            this.полBindingSource.DataSource = this.uchetBaseDataSet;
             // 
-            // tableAdapterManager
+            // полTableAdapter
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = Uchet.UchetBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.ВыдачаСИЗTableAdapter = null;
-            this.tableAdapterManager.ЛичнаяКарточкаTableAdapter = this.личнаяКарточкаTableAdapter;
-            this.tableAdapterManager.ПодразделенияTableAdapter = null;
-            this.tableAdapterManager.ПолTableAdapter = null;
-            this.tableAdapterManager.ПрофессииTableAdapter = null;
-            this.tableAdapterManager.СведенияОВыдачеСИЗTableAdapter = null;
-            this.tableAdapterManager.СведенияОтиповыхНормахTableAdapter = null;
-            this.tableAdapterManager.СИЗTableAdapter = null;
-            this.tableAdapterManager.СотрудникиTableAdapter = null;
-            this.tableAdapterManager.ТиповыеНормыTableAdapter = null;
+            this.полTableAdapter.ClearBeforeFill = true;
+            // 
+            // профессииBindingSource
+            // 
+            this.профессииBindingSource.DataMember = "Профессии";
+            this.профессииBindingSource.DataSource = this.uchetBaseDataSet;
+            // 
+            // профессииTableAdapter
+            // 
+            this.профессииTableAdapter.ClearBeforeFill = true;
+            // 
+            // подразделенияBindingSource
+            // 
+            this.подразделенияBindingSource.DataMember = "Подразделения";
+            this.подразделенияBindingSource.DataSource = this.uchetBaseDataSet;
+            // 
+            // подразделенияTableAdapter
+            // 
+            this.подразделенияTableAdapter.ClearBeforeFill = true;
             // 
             // кодЛичнаяКарточкаDataGridViewTextBoxColumn
             // 
             this.кодЛичнаяКарточкаDataGridViewTextBoxColumn.DataPropertyName = "КодЛичнаяКарточка";
-            this.кодЛичнаяКарточкаDataGridViewTextBoxColumn.HeaderText = "КодЛичнаяКарточка";
+            this.кодЛичнаяКарточкаDataGridViewTextBoxColumn.HeaderText = "Код";
             this.кодЛичнаяКарточкаDataGridViewTextBoxColumn.Name = "кодЛичнаяКарточкаDataGridViewTextBoxColumn";
+            this.кодЛичнаяКарточкаDataGridViewTextBoxColumn.Width = 40;
             // 
             // фИОDataGridViewTextBoxColumn
             // 
             this.фИОDataGridViewTextBoxColumn.DataPropertyName = "ФИО";
+            this.фИОDataGridViewTextBoxColumn.DataSource = this.сотрудникиBindingSource;
+            this.фИОDataGridViewTextBoxColumn.DisplayMember = "ФИО";
             this.фИОDataGridViewTextBoxColumn.HeaderText = "ФИО";
             this.фИОDataGridViewTextBoxColumn.Name = "фИОDataGridViewTextBoxColumn";
+            this.фИОDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.фИОDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.фИОDataGridViewTextBoxColumn.ValueMember = "КодСотрудник";
+            this.фИОDataGridViewTextBoxColumn.Width = 200;
             // 
             // табельныйНомерDataGridViewTextBoxColumn
             // 
-            this.табельныйНомерDataGridViewTextBoxColumn.DataPropertyName = "ТабельныйНомер";
+            this.табельныйНомерDataGridViewTextBoxColumn.DataPropertyName = "Таб. Номер";
+            this.табельныйНомерDataGridViewTextBoxColumn.FillWeight = 70F;
             this.табельныйНомерDataGridViewTextBoxColumn.HeaderText = "ТабельныйНомер";
             this.табельныйНомерDataGridViewTextBoxColumn.Name = "табельныйНомерDataGridViewTextBoxColumn";
             // 
             // структурноеПодразделениеDataGridViewTextBoxColumn
             // 
             this.структурноеПодразделениеDataGridViewTextBoxColumn.DataPropertyName = "СтруктурноеПодразделение";
+            this.структурноеПодразделениеDataGridViewTextBoxColumn.DataSource = this.подразделенияBindingSource;
+            this.структурноеПодразделениеDataGridViewTextBoxColumn.DisplayMember = "НаименованиеПодразделение";
+            this.структурноеПодразделениеDataGridViewTextBoxColumn.FillWeight = 110F;
             this.структурноеПодразделениеDataGridViewTextBoxColumn.HeaderText = "СтруктурноеПодразделение";
             this.структурноеПодразделениеDataGridViewTextBoxColumn.Name = "структурноеПодразделениеDataGridViewTextBoxColumn";
+            this.структурноеПодразделениеDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.структурноеПодразделениеDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.структурноеПодразделениеDataGridViewTextBoxColumn.ValueMember = "КодПодразделение";
             // 
             // профессияDataGridViewTextBoxColumn
             // 
             this.профессияDataGridViewTextBoxColumn.DataPropertyName = "Профессия";
+            this.профессияDataGridViewTextBoxColumn.DataSource = this.профессииBindingSource;
+            this.профессияDataGridViewTextBoxColumn.DisplayMember = "Профессии";
+            this.профессияDataGridViewTextBoxColumn.FillWeight = 200F;
             this.профессияDataGridViewTextBoxColumn.HeaderText = "Профессия";
             this.профессияDataGridViewTextBoxColumn.Name = "профессияDataGridViewTextBoxColumn";
+            this.профессияDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.профессияDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.профессияDataGridViewTextBoxColumn.ValueMember = "КодПрофессии";
             // 
             // датаПоступленияDataGridViewTextBoxColumn
             // 
@@ -514,8 +586,14 @@
             // полDataGridViewTextBoxColumn
             // 
             this.полDataGridViewTextBoxColumn.DataPropertyName = "Пол";
+            this.полDataGridViewTextBoxColumn.DataSource = this.полBindingSource;
+            this.полDataGridViewTextBoxColumn.DisplayMember = "Пол";
+            this.полDataGridViewTextBoxColumn.FillWeight = 40F;
             this.полDataGridViewTextBoxColumn.HeaderText = "Пол";
             this.полDataGridViewTextBoxColumn.Name = "полDataGridViewTextBoxColumn";
+            this.полDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.полDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.полDataGridViewTextBoxColumn.ValueMember = "КодПол";
             // 
             // ростDataGridViewTextBoxColumn
             // 
@@ -565,11 +643,27 @@
             this.предусмВыдачаDataGridViewTextBoxColumn.HeaderText = "ПредусмВыдача";
             this.предусмВыдачаDataGridViewTextBoxColumn.Name = "предусмВыдачаDataGridViewTextBoxColumn";
             // 
-            // Form1
+            // materialRaisedButton12
+            // 
+            this.materialRaisedButton12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton12.Depth = 0;
+            this.materialRaisedButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.materialRaisedButton12.Location = new System.Drawing.Point(902, 281);
+            this.materialRaisedButton12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton12.Name = "materialRaisedButton12";
+            this.materialRaisedButton12.Primary = true;
+            this.materialRaisedButton12.Size = new System.Drawing.Size(137, 28);
+            this.materialRaisedButton12.TabIndex = 48;
+            this.materialRaisedButton12.Text = "Просмотр";
+            this.materialRaisedButton12.UseVisualStyleBackColor = true;
+            this.materialRaisedButton12.Click += new System.EventHandler(this.materialRaisedButton12_Click);
+            // 
+            // ГлавнаяЛК
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1042, 590);
+            this.Controls.Add(this.materialRaisedButton12);
             this.Controls.Add(this.materialRaisedButton10);
             this.Controls.Add(this.materialRaisedButton11);
             this.Controls.Add(this.materialRaisedButton5);
@@ -592,15 +686,19 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Name = "ГлавнаяЛК";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Учёт спецодежды";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uchetBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.личнаяКарточкаBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uchetBaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.полBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.профессииBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.подразделенияBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -630,19 +728,27 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider4;
         private MaterialSkin.Controls.MaterialDivider materialDivider5;
         private MaterialSkin.Controls.MaterialDivider materialDivider2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton10;
         private UchetBaseDataSet uchetBaseDataSet;
         private System.Windows.Forms.BindingSource личнаяКарточкаBindingSource;
         private UchetBaseDataSetTableAdapters.ЛичнаяКарточкаTableAdapter личнаяКарточкаTableAdapter;
         private UchetBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton10;
+        private System.Windows.Forms.BindingSource сотрудникиBindingSource;
+        private UchetBaseDataSetTableAdapters.СотрудникиTableAdapter сотрудникиTableAdapter;
+        private System.Windows.Forms.BindingSource полBindingSource;
+        private UchetBaseDataSetTableAdapters.ПолTableAdapter полTableAdapter;
+        private System.Windows.Forms.BindingSource профессииBindingSource;
+        private UchetBaseDataSetTableAdapters.ПрофессииTableAdapter профессииTableAdapter;
+        private System.Windows.Forms.BindingSource подразделенияBindingSource;
+        private UchetBaseDataSetTableAdapters.ПодразделенияTableAdapter подразделенияTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn кодЛичнаяКарточкаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn фИОDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn фИОDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn табельныйНомерDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn структурноеПодразделениеDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn профессияDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn структурноеПодразделениеDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn профессияDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаПоступленияDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn датаИзмененияПрофессииDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn полDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn полDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ростDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn размерОдеждыDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn размерОбувиDataGridViewTextBoxColumn;
@@ -651,6 +757,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn размерРеспиратораDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn размерПерчатокDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn предусмВыдачаDataGridViewTextBoxColumn;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton12;
     }
 }
 

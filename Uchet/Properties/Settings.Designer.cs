@@ -26,18 +26,8 @@ namespace Uchet.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Home\\Desktop\\UchetBase.mdb")]
-        public string UchetBaseConnectionString {
-            get {
-                return ((string)(this["UchetBaseConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Home\\Desktop\\Диплом\\UchetBa" +
-            "se.mdb")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Наталья\\Desktop\\Диплом\\Uche" +
+            "tBase.mdb")]
         public string UchetBaseConnectionString1 {
             get {
                 return ((string)(this["UchetBaseConnectionString1"]));

@@ -61,7 +61,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(464, 368);
+            this.materialLabel1.Location = new System.Drawing.Point(517, 368);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(54, 19);
@@ -73,7 +73,7 @@
             this.materialRaisedButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton6.Depth = 0;
             this.materialRaisedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialRaisedButton6.Location = new System.Drawing.Point(426, 448);
+            this.materialRaisedButton6.Location = new System.Drawing.Point(479, 448);
             this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton6.Name = "materialRaisedButton6";
             this.materialRaisedButton6.Primary = true;
@@ -86,7 +86,7 @@
             // 
             this.materialSingleLineTextField3.Depth = 0;
             this.materialSingleLineTextField3.Hint = "";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(426, 419);
+            this.materialSingleLineTextField3.Location = new System.Drawing.Point(479, 419);
             this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
             this.materialSingleLineTextField3.PasswordChar = '\0';
@@ -102,7 +102,7 @@
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(426, 390);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(479, 390);
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
             this.materialSingleLineTextField2.PasswordChar = '\0';
@@ -118,7 +118,7 @@
             // 
             this.materialDivider5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.materialDivider5.Depth = 0;
-            this.materialDivider5.Location = new System.Drawing.Point(422, 360);
+            this.materialDivider5.Location = new System.Drawing.Point(475, 360);
             this.materialDivider5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider5.Name = "materialDivider5";
             this.materialDivider5.Size = new System.Drawing.Size(147, 131);
@@ -132,7 +132,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(422, 88);
+            this.materialLabel2.Location = new System.Drawing.Point(475, 88);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(141, 19);
@@ -144,7 +144,7 @@
             this.materialRaisedButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton3.Depth = 0;
             this.materialRaisedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(426, 174);
+            this.materialRaisedButton3.Location = new System.Drawing.Point(479, 174);
             this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton3.Name = "materialRaisedButton3";
             this.materialRaisedButton3.Primary = true;
@@ -158,7 +158,7 @@
             this.materialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton2.Depth = 0;
             this.materialRaisedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(426, 141);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(479, 141);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Primary = true;
@@ -176,7 +176,7 @@
             this.materialRaisedButton1.ForeColor = System.Drawing.SystemColors.Control;
             this.materialRaisedButton1.Image = ((System.Drawing.Image)(resources.GetObject("materialRaisedButton1.Image")));
             this.materialRaisedButton1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(426, 107);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(479, 107);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
@@ -189,7 +189,7 @@
             // 
             this.materialDivider4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.materialDivider4.Depth = 0;
-            this.materialDivider4.Location = new System.Drawing.Point(422, 86);
+            this.materialDivider4.Location = new System.Drawing.Point(475, 86);
             this.materialDivider4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider4.Name = "materialDivider4";
             this.materialDivider4.Size = new System.Drawing.Size(147, 122);
@@ -200,7 +200,7 @@
             // 
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(422, 64);
+            this.materialDivider1.Location = new System.Drawing.Point(475, 64);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
             this.materialDivider1.Size = new System.Drawing.Size(149, 427);
@@ -247,7 +247,7 @@
             this.сотрудникиDataGridView.DataSource = this.сотрудникиBindingSource;
             this.сотрудникиDataGridView.Location = new System.Drawing.Point(0, 64);
             this.сотрудникиDataGridView.Name = "сотрудникиDataGridView";
-            this.сотрудникиDataGridView.Size = new System.Drawing.Size(423, 425);
+            this.сотрудникиDataGridView.Size = new System.Drawing.Size(475, 425);
             this.сотрудникиDataGridView.TabIndex = 59;
             // 
             // dataGridViewTextBoxColumn1
@@ -262,7 +262,7 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "ФИО";
             this.dataGridViewTextBoxColumn2.HeaderText = "ФИО";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 160;
+            this.dataGridViewTextBoxColumn2.Width = 215;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -271,11 +271,11 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 120;
             // 
-            // Form3
+            // Сотрудники
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 489);
+            this.ClientSize = new System.Drawing.Size(621, 489);
             this.Controls.Add(this.сотрудникиDataGridView);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialRaisedButton6);
@@ -288,7 +288,7 @@
             this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.materialDivider4);
             this.Controls.Add(this.materialDivider1);
-            this.Name = "Form3";
+            this.Name = "Сотрудники";
             this.Text = "Сотрудники";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.uchetBaseDataSet)).EndInit();

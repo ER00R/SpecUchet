@@ -6,6 +6,11 @@ using System.Windows.Forms;
 
 namespace Uchet
 {
+    static class data
+    {
+        public static int mode;
+        public static int kod;
+    }
     static class Program
     {
         /// <summary>

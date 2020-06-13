@@ -73,6 +73,11 @@
             this.сведенияОВыдачеСИЗBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.типовыеНормыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.типовыеНормыDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -84,11 +89,7 @@
             this.профессияComboBox = new System.Windows.Forms.ComboBox();
             this.профессииBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.профессииTableAdapter = new Uchet.UchetBaseDataSetTableAdapters.ПрофессииTableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
             кодЛичнаяКарточкаLabel = new System.Windows.Forms.Label();
             фИОLabel = new System.Windows.Forms.Label();
             табельныйНомерLabel = new System.Windows.Forms.Label();
@@ -119,6 +120,7 @@
             // кодЛичнаяКарточкаLabel
             // 
             кодЛичнаяКарточкаLabel.AutoSize = true;
+            кодЛичнаяКарточкаLabel.BackColor = System.Drawing.Color.White;
             кодЛичнаяКарточкаLabel.Location = new System.Drawing.Point(86, 71);
             кодЛичнаяКарточкаLabel.Name = "кодЛичнаяКарточкаLabel";
             кодЛичнаяКарточкаLabel.Size = new System.Drawing.Size(81, 13);
@@ -128,6 +130,7 @@
             // фИОLabel
             // 
             фИОLabel.AutoSize = true;
+            фИОLabel.BackColor = System.Drawing.Color.White;
             фИОLabel.Location = new System.Drawing.Point(130, 97);
             фИОLabel.Name = "фИОLabel";
             фИОLabel.Size = new System.Drawing.Size(37, 13);
@@ -137,6 +140,7 @@
             // табельныйНомерLabel
             // 
             табельныйНомерLabel.AutoSize = true;
+            табельныйНомерLabel.BackColor = System.Drawing.Color.White;
             табельныйНомерLabel.Location = new System.Drawing.Point(63, 124);
             табельныйНомерLabel.Name = "табельныйНомерLabel";
             табельныйНомерLabel.Size = new System.Drawing.Size(104, 13);
@@ -146,6 +150,7 @@
             // структурноеПодразделениеLabel
             // 
             структурноеПодразделениеLabel.AutoSize = true;
+            структурноеПодразделениеLabel.BackColor = System.Drawing.Color.White;
             структурноеПодразделениеLabel.Location = new System.Drawing.Point(11, 180);
             структурноеПодразделениеLabel.Name = "структурноеПодразделениеLabel";
             структурноеПодразделениеLabel.Size = new System.Drawing.Size(156, 13);
@@ -155,6 +160,7 @@
             // датаИзмененияПрофессииLabel
             // 
             датаИзмененияПрофессииLabel.AutoSize = true;
+            датаИзмененияПрофессииLabel.BackColor = System.Drawing.Color.White;
             датаИзмененияПрофессииLabel.Location = new System.Drawing.Point(9, 233);
             датаИзмененияПрофессииLabel.Name = "датаИзмененияПрофессииLabel";
             датаИзмененияПрофессииLabel.Size = new System.Drawing.Size(158, 13);
@@ -164,6 +170,7 @@
             // полLabel
             // 
             полLabel.AutoSize = true;
+            полLabel.BackColor = System.Drawing.Color.White;
             полLabel.Location = new System.Drawing.Point(137, 259);
             полLabel.Name = "полLabel";
             полLabel.Size = new System.Drawing.Size(30, 13);
@@ -173,6 +180,7 @@
             // датаПоступленияLabel
             // 
             датаПоступленияLabel.AutoSize = true;
+            датаПоступленияLabel.BackColor = System.Drawing.Color.White;
             датаПоступленияLabel.Location = new System.Drawing.Point(62, 207);
             датаПоступленияLabel.Name = "датаПоступленияLabel";
             датаПоступленияLabel.Size = new System.Drawing.Size(105, 13);
@@ -182,6 +190,7 @@
             // ростLabel
             // 
             ростLabel.AutoSize = true;
+            ростLabel.BackColor = System.Drawing.Color.White;
             ростLabel.Location = new System.Drawing.Point(489, 71);
             ростLabel.Name = "ростLabel";
             ростLabel.Size = new System.Drawing.Size(34, 13);
@@ -191,6 +200,7 @@
             // размерОдеждыLabel
             // 
             размерОдеждыLabel.AutoSize = true;
+            размерОдеждыLabel.BackColor = System.Drawing.Color.White;
             размерОдеждыLabel.Location = new System.Drawing.Point(429, 97);
             размерОдеждыLabel.Name = "размерОдеждыLabel";
             размерОдеждыLabel.Size = new System.Drawing.Size(94, 13);
@@ -200,6 +210,7 @@
             // размерОбувиLabel
             // 
             размерОбувиLabel.AutoSize = true;
+            размерОбувиLabel.BackColor = System.Drawing.Color.White;
             размерОбувиLabel.Location = new System.Drawing.Point(440, 124);
             размерОбувиLabel.Name = "размерОбувиLabel";
             размерОбувиLabel.Size = new System.Drawing.Size(83, 13);
@@ -209,6 +220,7 @@
             // размерГоловногоУбораLabel
             // 
             размерГоловногоУбораLabel.AutoSize = true;
+            размерГоловногоУбораLabel.BackColor = System.Drawing.Color.White;
             размерГоловногоУбораLabel.Location = new System.Drawing.Point(383, 150);
             размерГоловногоУбораLabel.Name = "размерГоловногоУбораLabel";
             размерГоловногоУбораLabel.Size = new System.Drawing.Size(140, 13);
@@ -218,6 +230,7 @@
             // размерПротивогазаLabel
             // 
             размерПротивогазаLabel.AutoSize = true;
+            размерПротивогазаLabel.BackColor = System.Drawing.Color.White;
             размерПротивогазаLabel.Location = new System.Drawing.Point(405, 177);
             размерПротивогазаLabel.Name = "размерПротивогазаLabel";
             размерПротивогазаLabel.Size = new System.Drawing.Size(118, 13);
@@ -227,6 +240,7 @@
             // размерРеспиратораLabel
             // 
             размерРеспиратораLabel.AutoSize = true;
+            размерРеспиратораLabel.BackColor = System.Drawing.Color.White;
             размерРеспиратораLabel.Location = new System.Drawing.Point(405, 203);
             размерРеспиратораLabel.Name = "размерРеспиратораLabel";
             размерРеспиратораLabel.Size = new System.Drawing.Size(118, 13);
@@ -236,6 +250,7 @@
             // размерПерчатокLabel
             // 
             размерПерчатокLabel.AutoSize = true;
+            размерПерчатокLabel.BackColor = System.Drawing.Color.White;
             размерПерчатокLabel.Location = new System.Drawing.Point(423, 229);
             размерПерчатокLabel.Name = "размерПерчатокLabel";
             размерПерчатокLabel.Size = new System.Drawing.Size(100, 13);
@@ -245,7 +260,8 @@
             // предусмВыдачаLabel
             // 
             предусмВыдачаLabel.AutoSize = true;
-            предусмВыдачаLabel.Location = new System.Drawing.Point(13, 295);
+            предусмВыдачаLabel.BackColor = System.Drawing.Color.White;
+            предусмВыдачаLabel.Location = new System.Drawing.Point(13, 286);
             предусмВыдачаLabel.Name = "предусмВыдачаLabel";
             предусмВыдачаLabel.Size = new System.Drawing.Size(154, 13);
             предусмВыдачаLabel.TabIndex = 28;
@@ -254,6 +270,7 @@
             // профессияLabel
             // 
             профессияLabel.AutoSize = true;
+            профессияLabel.BackColor = System.Drawing.Color.White;
             профессияLabel.Location = new System.Drawing.Point(99, 153);
             профессияLabel.Name = "профессияLabel";
             профессияLabel.Size = new System.Drawing.Size(68, 13);
@@ -278,6 +295,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.UpdateOrder = Uchet.UchetBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.АвторизационныеДанныеTableAdapter = null;
             this.tableAdapterManager.ВыдачаСИЗTableAdapter = null;
             this.tableAdapterManager.ЛичнаяКарточкаTableAdapter = this.личнаяКарточкаTableAdapter;
             this.tableAdapterManager.ПодразделенияTableAdapter = null;
@@ -310,7 +328,7 @@
             this.фИОComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.личнаяКарточкаBindingSource, "ФИО", true));
             this.фИОComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.личнаяКарточкаBindingSource, "ФИО", true));
             this.фИОComboBox.DataSource = this.сотрудникиBindingSource;
-            this.фИОComboBox.DisplayMember = "ФИО";
+            this.фИОComboBox.DisplayMember = "КодСотрудник";
             this.фИОComboBox.FormattingEnabled = true;
             this.фИОComboBox.Location = new System.Drawing.Point(173, 94);
             this.фИОComboBox.Name = "фИОComboBox";
@@ -336,7 +354,7 @@
             this.структурноеПодразделениеComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.личнаяКарточкаBindingSource, "СтруктурноеПодразделение", true));
             this.структурноеПодразделениеComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.личнаяКарточкаBindingSource, "СтруктурноеПодразделение", true));
             this.структурноеПодразделениеComboBox.DataSource = this.подразделенияBindingSource;
-            this.структурноеПодразделениеComboBox.DisplayMember = "НаименованиеПодразделение";
+            this.структурноеПодразделениеComboBox.DisplayMember = "КодПодразделение";
             this.структурноеПодразделениеComboBox.FormattingEnabled = true;
             this.структурноеПодразделениеComboBox.Location = new System.Drawing.Point(173, 177);
             this.структурноеПодразделениеComboBox.Name = "структурноеПодразделениеComboBox";
@@ -368,6 +386,7 @@
             this.полComboBox.Name = "полComboBox";
             this.полComboBox.Size = new System.Drawing.Size(182, 21);
             this.полComboBox.TabIndex = 11;
+            this.полComboBox.Text = "i";
             this.полComboBox.ValueMember = "КодПол";
             // 
             // полBindingSource
@@ -442,7 +461,7 @@
             // предусмВыдачаTextBox
             // 
             this.предусмВыдачаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.личнаяКарточкаBindingSource, "ПредусмВыдача", true));
-            this.предусмВыдачаTextBox.Location = new System.Drawing.Point(173, 292);
+            this.предусмВыдачаTextBox.Location = new System.Drawing.Point(173, 283);
             this.предусмВыдачаTextBox.Name = "предусмВыдачаTextBox";
             this.предусмВыдачаTextBox.Size = new System.Drawing.Size(477, 20);
             this.предусмВыдачаTextBox.TabIndex = 29;
@@ -468,19 +487,53 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.типовыеНормыDataGridView.DataSource = this.типовыеНормыBindingSource;
-            this.типовыеНормыDataGridView.Location = new System.Drawing.Point(12, 350);
+            this.типовыеНормыDataGridView.Location = new System.Drawing.Point(12, 335);
             this.типовыеНормыDataGridView.Name = "типовыеНормыDataGridView";
-            this.типовыеНормыDataGridView.Size = new System.Drawing.Size(638, 255);
+            this.типовыеНормыDataGridView.Size = new System.Drawing.Size(638, 270);
             this.типовыеНормыDataGridView.TabIndex = 30;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "КодТиповыеНормы";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Код";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 5;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "НаименованиеСИЗ";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Наименование СИЗ";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 275;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "ПунктТипНорм";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Пункт типовых норм";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ЕдиницаИзмерения";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Единица Измерения";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "КоличествоНаГод";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Количество на год";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // materialDivider1
             // 
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(-1, 318);
+            this.materialDivider1.Location = new System.Drawing.Point(-1, 309);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(675, 303);
+            this.materialDivider1.Size = new System.Drawing.Size(675, 312);
             this.materialDivider1.TabIndex = 33;
             this.materialDivider1.Text = "materialDivider1";
             // 
@@ -519,6 +572,7 @@
             this.materialRaisedButton3.TabIndex = 35;
             this.materialRaisedButton3.Text = "Сохранить личную карточку";
             this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
             // 
             // materialDivider5
             // 
@@ -537,12 +591,12 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.materialLabel2.ForeColor = System.Drawing.Color.White;
-            this.materialLabel2.Location = new System.Drawing.Point(274, 325);
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(275, 313);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(130, 20);
+            this.materialLabel2.Size = new System.Drawing.Size(127, 19);
             this.materialLabel2.TabIndex = 48;
             this.materialLabel2.Text = "Типовые нормы";
             // 
@@ -563,7 +617,7 @@
             this.профессияComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.личнаяКарточкаBindingSource, "Профессия", true));
             this.профессияComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.личнаяКарточкаBindingSource, "Профессия", true));
             this.профессияComboBox.DataSource = this.профессииBindingSource;
-            this.профессияComboBox.DisplayMember = "Профессии";
+            this.профессияComboBox.DisplayMember = "КодПрофессии";
             this.профессияComboBox.FormattingEnabled = true;
             this.профессияComboBox.Location = new System.Drawing.Point(173, 150);
             this.профессияComboBox.Name = "профессияComboBox";
@@ -582,44 +636,22 @@
             // 
             this.профессииTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // materialDivider2
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "КодТиповыеНормы";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Код";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            this.dataGridViewTextBoxColumn1.Width = 5;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "НаименованиеСИЗ";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Наименование СИЗ";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 275;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "ПунктТипНорм";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Пункт типовых норм";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 110;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ЕдиницаИзмерения";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Единица Измерения";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "КоличествоНаГод";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Количество на год";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.materialDivider2.BackColor = System.Drawing.Color.White;
+            this.materialDivider2.Depth = 0;
+            this.materialDivider2.Location = new System.Drawing.Point(-1, 64);
+            this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider2.Name = "materialDivider2";
+            this.materialDivider2.Size = new System.Drawing.Size(675, 303);
+            this.materialDivider2.TabIndex = 50;
+            this.materialDivider2.Text = "materialDivider2";
             // 
             // РаботаСЛК
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(666, 664);
             this.Controls.Add(профессияLabel);
             this.Controls.Add(this.профессияComboBox);
@@ -659,6 +691,7 @@
             this.Controls.Add(this.кодЛичнаяКарточкаTextBox);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.materialDivider5);
+            this.Controls.Add(this.materialDivider2);
             this.Name = "РаботаСЛК";
             this.Text = "Работа с личной карточкой";
             this.Load += new System.EventHandler(this.Form8_Load);
@@ -721,5 +754,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private MaterialSkin.Controls.MaterialDivider materialDivider2;
     }
 }

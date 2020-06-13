@@ -7,9 +7,12 @@
     }
 }
 
-namespace Uchet.UchetBaseDataSetTableAdapters {
-    
-    
+namespace Uchet.UchetBaseDataSetTableAdapters
+{
+    partial class АвторизационныеДанныеTableAdapter
+    {
+    }
+
     public partial class ТиповыеНормыTableAdapter {
     }
 }

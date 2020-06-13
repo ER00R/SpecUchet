@@ -82,11 +82,11 @@
     <Compile Include="РаботаТиповыеНормы.Designer.cs">
       <DependentUpon>РаботаТиповыеНормы.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form14.cs">
+    <Compile Include="РаботаСЛКОборот.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form14.Designer.cs">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <Compile Include="РаботаСЛКОборот.Designer.cs">
+      <DependentUpon>РаботаСЛКОборот.cs</DependentUpon>
     </Compile>
     <Compile Include="Авторизация.cs">
       <SubType>Form</SubType>
@@ -158,8 +158,8 @@
     <EmbeddedResource Include="РаботаТиповыеНормы.resx">
       <DependentUpon>РаботаТиповыеНормы.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form14.resx">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <EmbeddedResource Include="РаботаСЛКОборот.resx">
+      <DependentUpon>РаботаСЛКОборот.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Авторизация.resx">
       <DependentUpon>Авторизация.cs</DependentUpon>
